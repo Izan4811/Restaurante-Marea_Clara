@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#082c32">
+  <meta name="description" content="Marea Clara: cocina vegana en un restaurante sumergido entre peces y arrecifes.">
+  <title>Marea Clara — Cocina sumergida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Marea Clara, inicio">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>MAREA <span class="brand-light">CLARA</span></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#carta">La carta</a>
+      <a href="#experiencia">El espacio</a>
+    </nav>
+    <a class="header-reserve" href="#carta">Explorar carta <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-shimmer" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> COCINA VEGANA BAJO EL MAR</p>
+        <h1>Una mesa entre<br>dos <em>mundos.</em></h1>
+        <p class="hero-description">
+          Un jardín de sabores vegetales, rodeado de agua.
+          Bienvenidos a una experiencia que nada se parece a otra.
+        </p>
+        <a class="button button-light" href="#carta">Descubrir la carta <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-caption">
+        <span>36° 43' 12.4" N</span>
+        <span>UN REFUGIO BAJO EL AGUA · DESDE 2024</span>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span> DESLIZA PARA EXPLORAR</div>
+    </section>
+
+    <section class="intro" id="experiencia">
+      <div class="intro-symbol" aria-hidden="true">≈</div>
+      <p class="eyebrow eyebrow-dark">UN LUGAR FUERA DE LA ORILLA</p>
+      <h2>El océano es nuestro<br><em>comedor.</em></h2>
+      <p class="intro-copy">
+        Paredes y techo de cristal, bancos de peces como vecinos y una cocina
+        completamente vegetal. Aquí cada bocado celebra lo que crece en la tierra
+        y cada mirada recuerda lo que debemos cuidar.
+      </p>
+      <div class="intro-details">
+        <span><b>100%</b> cocina vegetal</span>
+        <span><b>360°</b> vistas al océano</span>
+        <span><b>0</b> plástico de un solo uso</span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="carta">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">DE LA TIERRA, CON MAREA</p>
+          <h2>La carta <em>marina</em></h2>
+        </div>
+        <p class="menu-note">Todo es vegetal, de temporada<br>y preparado con calma.</p>
+      </div>
+
+      <div class="menu-toolbar">
+        <div class="menu-tabs" aria-label="Secciones de la carta">
+          <a href="#tapas">01 <span>Tapas</span></a>
+          <a href="#raciones">02 <span>Raciones</span></a>
+          <a href="#postres">03 <span>Postres</span></a>
+        </div>
+        <button class="recommend-button" id="recommend-button" type="button">
+          ✧ Sorpréndeme
+        </button>
+      </div>
+
+      <div class="recommendation" id="recommendation" aria-live="polite" hidden></div>
+
+      <section class="menu-group" id="tapas">
+        <div class="group-heading">
+          <span class="group-number">01</span>
+          <div>
+            <p class="eyebrow eyebrow-dark">PARA ABRIR EL APETITO</p>
+            <h3>Tapas <span>— pequeños encuentros</span></h3>
+          </div>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card" data-name="Perlas de Neptuno" data-price="9.5">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2e296?auto=format&fit=crop&w=900&q=85" alt="Ensalada fresca de verduras, hojas verdes y semillas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Perlas de Neptuno</h4><span class="price">9,50 €</span></div>
+              <p>Esferas de melón y pepino, crema de anacardos al eneldo y un susurro de lima.</p>
+              <button class="add-button" type="button" aria-label="Añadir Perlas de Neptuno a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+
+          <article class="dish-card" data-name="Nubes de Alga" data-price="8">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Cuenco colorido de verduras y hierbas frescas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Nubes de Alga</h4><span class="price">8,00 €</span></div>
+              <p>Buñuelos ligeros de wakame con mayonesa de aquafaba y limón confitado.</p>
+              <button class="add-button" type="button" aria-label="Añadir Nubes de Alga a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+
+          <article class="dish-card" data-name="Conchas del Bosque" data-price="10">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=900&q=85" alt="Plato de setas y verduras asadas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Conchas del Bosque</h4><span class="price">10,00 €</span></div>
+              <p>Setas ostra a la plancha, mantequilla vegetal de ajo negro y migas crujientes.</p>
+              <button class="add-button" type="button" aria-label="Añadir Conchas del Bosque a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-group" id="raciones">
+        <div class="group-heading">
+          <span class="group-number">02</span>
+          <div>
+            <p class="eyebrow eyebrow-dark">PARA COMPARTIR SIN PRISA</p>
+            <h3>Raciones <span>— la marea sube</span></h3>
+          </div>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card" data-name="Arrecife de la Huerta" data-price="18">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85" alt="Ensalada abundante con verduras frescas de colores">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Arrecife de la Huerta</h4><span class="price">18,00 €</span></div>
+              <p>Verduras de temporada, hummus de guisante, hierbas frescas y pan de masa madre.</p>
+              <button class="add-button" type="button" aria-label="Añadir Arrecife de la Huerta a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+
+          <article class="dish-card" data-name="La Gran Ola" data-price="19.5">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2e296?auto=format&fit=crop&w=900&q=85" alt="Plato vegetal con hortalizas, hojas y semillas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>La Gran Ola</h4><span class="price">19,50 €</span></div>
+              <p>Coliflor asada entera, glaseado de miso, tahini de limón y avellanas tostadas.</p>
+              <button class="add-button" type="button" aria-label="Añadir La Gran Ola a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+
+          <article class="dish-card" data-name="Nido de Sirena" data-price="17">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=900&q=85" alt="Ración caliente de verduras y setas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Nido de Sirena</h4><span class="price">17,00 €</span></div>
+              <p>Tagliatelle de calabacín y espinaca con pesto de pistacho y parmesano de almendra.</p>
+              <button class="add-button" type="button" aria-label="Añadir Nido de Sirena a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-group" id="postres">
+        <div class="group-heading">
+          <span class="group-number">03</span>
+          <div>
+            <p class="eyebrow eyebrow-dark">EL ÚLTIMO OLEAJE</p>
+            <h3>Postres <span>— dulces profundidades</span></h3>
+          </div>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card" data-name="Tesoro Hundido" data-price="8.5">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Tarta de chocolate decorada con frutas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Tesoro Hundido</h4><span class="price">8,50 €</span></div>
+              <p>Bizcocho húmedo de cacao, corazón de caramelo salado y crema de coco.</p>
+              <button class="add-button" type="button" aria-label="Añadir Tesoro Hundido a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+
+          <article class="dish-card" data-name="Luna de Marea" data-price="7.5">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Postre cremoso con frutos rojos y fruta fresca">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Luna de Marea</h4><span class="price">7,50 €</span></div>
+              <p>Panna cotta vegetal de vainilla, frutos rojos y polvo de hibisco.</p>
+              <button class="add-button" type="button" aria-label="Añadir Luna de Marea a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+
+          <article class="dish-card" data-name="Arena de Estrellas" data-price="8">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=85" alt="Bol de frutas frescas y semillas">
+            <div class="dish-info">
+              <div class="dish-title"><h4>Arena de Estrellas</h4><span class="price">8,00 €</span></div>
+              <p>Mousse de limón y anacardos, crumble de almendra y perlas de granada.</p>
+              <button class="add-button" type="button" aria-label="Añadir Arena de Estrellas a Mi cuenta">Añadir a Mi cuenta <span>+</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <aside class="account" aria-labelledby="account-title">
+      <div class="account-copy">
+        <p class="eyebrow">TU VIAJE, A TU RITMO</p>
+        <h2 id="account-title">Mi cuenta</h2>
+        <p><span id="item-count">0</span> platos en la mesa</p>
+      </div>
+      <div class="account-total">
+        <span>Total</span>
+        <strong id="account-total">0,00 €</strong>
+      </div>
+      <button class="reset-button" id="reset-button" type="button">Vaciar cuenta ↺</button>
+    </aside>
+
+    <section class="closing">
+      <span class="closing-symbol" aria-hidden="true">✳</span>
+      <p>GRACIAS POR CUIDAR EL MAR</p>
+      <h2>Hasta la próxima <em>marea.</em></h2>
+      <a href="#inicio">Volver arriba ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#inicio">MAREA <span class="brand-light">CLARA</span></a>
+    <span>Cocina vegetal, océano vivo.</span>
+    <span>© 2025 Marea Clara</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
